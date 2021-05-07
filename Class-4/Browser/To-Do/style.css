@@ -1,0 +1,61 @@
+*{
+    box-sizing:content-box; /*Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included*/
+    box-sizing:border-box; /*The width and height properties (and min/max properties) includes content, padding and border*/
+
+}
+body{
+    margin:0;
+    background-color:lightgrey;
+    
+}
+.input-container{
+    height: 15vh;
+}
+.task-container{
+    height:85vh;
+    color:white;
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    background-color:darkblue;
+}
+.instruction{
+    font-size: 1.5rem;
+}
+
+.task{
+    list-style: none;
+    font-size: 1.25rem;
+    background-color: blue;
+   /*  backgound visible  */
+    width:60vh;
+    height: 2.5rem;
+    padding:1rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    
+
+}
+/* for fonts, go to fonts.google.com
+ select a font
+ click on select this style
+ copy paste link and css*/
+
+.input_box{ /* By default it is inline block so we have to make it block in order to give margin.*/
+    font-family: 'Zen Dots', cursive;
+    height: 60%;
+    font-size: 1.25rem;
+    margin-left: 26vw;
+    width:40vw;
+    display:block;
+    margin:0 auto;
+    margin-top: 3vh;
+}
+.instruction{
+    font-size:1.5rem;
+}
+/* Doubt */
+ @media screen and(min-width:35px){ /* to give conditions in css*/
+     .input_box{
+        width:60vw;
+    }
+}  

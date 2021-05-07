@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+/* div is a block-level box,i.e., the size of the box will be according to 
+the content present in it. But, when we give height and width to div and
+if the content is overflowing, we can manage that.*/
+        .box {
+            background-color: rebeccapurple;
+            /* color: white; */
+            height:3rem;
+            overflow: auto; /* it will automatically give scroll in the required direction(x/y axis)*/
+            margin-bottom:5rem;
+        }
+        .box2 {
+            background-color: rebeccapurple;
+            height:3rem;
+            overflow: scroll; /* it will give scroll in both the x and y axes.*/
+            margin-bottom:5rem;
+        }
+        .box3 {
+            background-color: rebeccapurple;
+            height:3rem;
+            overflow: hidden; /* it will give scroll in both the x and y axes.*/
+            margin-bottom:5rem;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae animi aliquid laboriosam
+        veritatis, ea tempore voluptate rerum ducimus neque cupiditate. Dolorum porro accusantium inventore, nostrum
+        ullam, neque deserunt corrupti error harum nesciunt id! Libero vitae, tenetur minima, delectus officia rem
+        accusantium pariatur ducimus modi ratione ad natus eaque amet sint officiis harum dicta distinctio tempore nisi
+        cum incidunt rerum. Aspernatur, atque vero expedita qui natus similique ab at ipsum ratione, sequi fuga commodi
+        perferendis! Quod itaque ut ab distinctio magnam animi ea culpa? Porro quae soluta sint ab eos autem ullam saepe
+        doloribus nisi voluptatibus, unde fugiat, numquam at.
+    </div>
+    <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae animi aliquid laboriosam
+            veritatis, ea tempore voluptate rerum ducimus neque cupiditate. Dolorum porro accusantium inventore, nostrum
+            ullam, neque deserunt corrupti error harum nesciunt id! Libero vitae, tenetur minima, delectus officia rem
+            accusantium pariatur ducimus modi ratione ad natus eaque amet sint officiis harum dicta distinctio tempore nisi
+            cum incidunt rerum. Aspernatur, atque vero expedita qui natus similique ab at ipsum ratione, sequi fuga commodi
+            perferendis! Quod itaque ut ab distinctio magnam animi ea culpa? Porro quae soluta sint ab eos autem ullam saepe
+            doloribus nisi voluptatibus, unde fugiat, numquam at.
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae animi aliquid laboriosam
+        veritatis, ea tempore voluptate rerum ducimus neque cupiditate. Dolorum porro accusantium inventore, nostrum
+        ullam, neque deserunt corrupti error harum nesciunt id! Libero vitae, tenetur minima, delectus officia rem
+        accusantium pariatur ducimus modi ratione ad natus eaque amet sint officiis harum dicta distinctio tempore nisi
+        cum incidunt rerum. Aspernatur, atque vero expedita qui natus similique ab at ipsum ratione, sequi fuga commodi
+        perferendis! Quod itaque ut ab distinctio magnam animi ea culpa? Porro quae soluta sint ab eos autem ullam saepe
+        doloribus nisi voluptatibus, unde fugiat, numquam at.
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+  /* we have made the parent class relative*/      
+        .parent {
+            background-color: rebeccapurple;
+            border: 5px dotted white;
+            position: relative;
+            top:150px; 
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .first {
+            background-color: lightcoral;
+        }
+        .first1 {
+            background-color: lightcoral;
+            margin-left: 150px;
+            position: relative;
+        }
+/* Since the parent class is made relative, now if
+we make box 2 absolute, it will again make a new page 
+but now on the parent class itself. So, now it will move 
+within the parent box only */
+        .second {
+            background-color: rgb(144, 238, 144);
+            left: 10px;
+        }
+        .second2 {
+            position: absolute;
+            top: 50px;
+            left:300px;
+            background-color: rgb(144, 238, 144);
+            
+        }
+
+
+        .third {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- page -> normal flow -->
+    <!-- left to right, top to bottom -->
+    <div class="parent">
+        <div class="box first">1(before) </div>
+        <div class="box first1">1(after) </div>
+        <div class="box second">2(before)</div>
+        <div class="box second2">2(after)</div>
+        <div class="box third">3</div>
+
+    </div>
+   
+</body>
+
+</html>
